@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Harshil</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Harshil</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> To take a challenging and managerial role in the field of Computer programming and implement the expertise and experience gained in this field to develop complex project with efficiency and quality.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', this)">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JAVA SCRIPT</span></li>
+                            <li><span>REACT.JS</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FRESHER</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>SSC from Shri Madhavlal Shah High School</li>
+                            <li><span>2022</span><br>HSC from Shri S. K. Waghela High School</li>
+                            <li><span>2025</span><br>B.Com from Ahmedabad Arts & Commerce College</li>
+                            <li><span>2025</span><br>Web Designer from C-Dac Computer Classes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------services-------->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p> To take a challenging and managerial role in the field of Computer programming and implement the expertise and experience gained in this field to develop complex project with efficiency and quality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- ---------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/webpage.png">
+                    <div class="layer">
+                        <h3>My Profile Webpage</h3>
+
+                        <a href="https://codesandbox.io/p/sandbox/github/harshil2004788/webpage"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/product.png">
+                    <div class="layer">
+                        <h3>Product Website</h3>
+
+                        <a href="https://codesandbox.io/p/sandbox/github/harshil2004788/product-website?file=%2Findex.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/foods.png" alt="Food">
+                    <div class="layer">
+                        <h3>Fruits & Vegetable Website</h3>
+
+                        <a href="https://codesandbox.io/p/sandbox/github/harshil2004788/Fruits-and-vegetables?file=%2Findex.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+    <!-----------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>harshilprajapati651@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9016080044</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100058425894030&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/91+9016080044"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/harshilprajapati834"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harshilkumar-prajapati-bb250336a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Harshil All Right Reserved </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
